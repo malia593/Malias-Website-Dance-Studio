@@ -10,6 +10,9 @@ body{
     overflow: scroll;
     background-color: #000;
     padding: 10px 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 
@@ -341,6 +344,7 @@ h2 {
 
 h2{
     color:#EAA000
+    
 }
 .class {
     display: grid;
@@ -365,4 +369,53 @@ h2{
     .class {
         grid-template-columns: 1fr;
     }
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.text-block, .image-block {
+    flex: 1 1 45%;
+    max-width: 45%;
+}
+
+.text-block p {
+    margin-bottom: 15px;
+}
+
+.image-block img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-row {
+        flex-direction: column;
+    }
+
+    .text-block, .image-block {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+
+    .text-block {
+        text-align: justify;
+    }
+}
+.class{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
