@@ -15,9 +15,6 @@ body{
     padding: 20px;
 }
 
-
-
-
 video{
     margin:auto;
     padding: 50 100px; 
@@ -239,6 +236,7 @@ section .hero-content{
 h2 {
     font-size: 1.5em;
     font-weight: bold;
+    text-align: center;
 }
 
 .overlay {
@@ -307,6 +305,8 @@ h2 {
     gap: 20px;
     width: 100%;
     margin: 0 auto;
+   align-items: center;
+   padding: 20px;
 
 }
 
@@ -418,4 +418,16 @@ h2{
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+}
+
+
+.footer-content {
+    background-color: #4C0E0E;
+    color: #EAA000;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
 }
